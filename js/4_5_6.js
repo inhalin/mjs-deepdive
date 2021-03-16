@@ -36,3 +36,31 @@ console.log(hex);       // 65
 console.log(1 / 0);     // Infinity
 console.log(-1 / 0);    // -Infinity
 console.log(5 * 'hello'); // NaN
+
+// 6-3 template literal
+
+var old_str = '<ul>\n\t<li>일반 문자열<li>\n</ul>';
+
+console.log(old_str);
+
+var template_literal = `<ul>
+	<li>템플릿 리터럴</li>
+</ul>`;
+
+console.log(template_literal);
+
+var name = '홍길동';
+var age = '18';
+
+console.log(`반갑습니다! ${name}님의 ${age}번째 생일을 축하합니다!`);	// 반갑습니다! 홍길동님의 18번째 생일을 축하합니다!
+
+console.log(`3 + 16 = ${3 + 16}`);	// 3 + 6 = 19
+
+// 6-7 Symbol
+var key = Symbol('key');
+console.log(typeof key);
+
+var obj = {};
+
+obj[key] = 'Kimin';
+console.log(obj[key]);
